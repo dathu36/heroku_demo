@@ -1,9 +1,8 @@
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import pickle
 
-df = pd.read_csv('hiring_model.csv')
+df = pd.read_csv('C:/Users/User/ML_Deploy/flask_depl/hiring_model.csv')
+df
 
 df.experience.fillna(0, inplace=True)
 df.test_score.fillna(df.test_score.mean(), inplace=True)
